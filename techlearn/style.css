@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1f2937;
+}
+.logo {
+    display: flex;
+    align-items: center;   /* Vertically aligns image and text */
+    gap: 10px;             /* Space between image and text */
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    align-items: self-end;
+} 
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f3f4f6;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #1d4ed8;
+}
+
+/* Features (Grid) */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+/* Simple colors for cards */
+.html {
+    background: #f97316;
+}
+
+.css {
+    background: #3b82f6;
+}
+
+.js {
+    background: #facc15;
+    color: #111;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1f2937;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+```
